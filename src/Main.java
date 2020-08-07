@@ -8,7 +8,7 @@ public class Main {
     String myString = "Donnie Spini";
         System.out.println(myString);
 //3.
-//    String myString = 12345;
+//    String myString = 'D';
 //        System.out.println(myString);
 //        FAILED
 //4.
@@ -24,16 +24,19 @@ public class Main {
 //        System.out.println(myNumber);
 //        FAILED
 //7.
-    long myNumber = 123L;
-        System.out.println(myNumber);
-//8.
-//    long myNumber = 123;
+//    long myNumber = 123L;
 //        System.out.println(myNumber);
-//        FAILED
+//        PASS
+////8.
+    long myNumber = 123;
+        System.out.println(myNumber);
 //9.
 //    float myNumber = 3.14;
 //        System.out.println(myNumber);
-
+//        FAILED
+//    float myNumber = (float) 3.14;
+//        System.out.println(myNumber);
+//        PASS
     float pi = 3.14F;
         System.out.println(pi);
 //10.
@@ -41,11 +44,10 @@ public class Main {
         System.out.println(x++);
         System.out.println(x);
 //        RETURNS 5 AND 6
-
 //        int x = 5;
 //        System.out.println(++x);
 //        System.out.println(x);
-//        FAILED
+//        RETURNS 6 AND 6
 //11.
 //    class myFavoriteNumber = 27;
 //        System.out.println(myFavoriteNumber);
