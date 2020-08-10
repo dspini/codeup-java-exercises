@@ -49,35 +49,37 @@ public class Main {
 //        System.out.println(x);
 //        RETURNS 6 AND 6
 //11.
-//    class myFavoriteNumber = 27;
+//    String class = "Hyperion";
 //        System.out.println(myFavoriteNumber);
-//        FAILED
+//        FAILED RESERVED WORD
 //12.
 //        String theNumberThree = "three";
 //        Object o = theNumberThree;
 //        int three = (int) o;
-//        CANNOT BE CAST TO CLASS
+//        CANNOT BE CAST TO CLASS "EXCEPTION"
 
 //        String theNumberThree = "three";
 //        Object o = theNumberThree;
 //        int three = (int) "three";
-//        STRING CANNOT BE CONVERTED TO INT
+//        STRING CANNOT BE CONVERTED TO INT "ERROR"
 //13.
-    myNumber = x += 5;
-        System.out.println(myNumber);
-
-    myNumber = 3 * 4;
-        System.out.println(myNumber);
-
-    myNumber = 10 / 2;
-        System.out.println(myNumber);
-
-    myNumber = 2 - 10;
-        System.out.println(myNumber);
+//        int x = 4;
+//        x += 5;
+//        System.out.println(x);
+//
+//        int x = 3;
+//        int y = 4;
+//        y *= x
+//        System.out.println(y);
+//
+//        int x = 10;
+//        int y = 2;
+//        x /= y;
+//        y -= x;
+//        System.out.println(y);
 //14.
-//        long maxLong = Long.MAX_VALUE;
-//        int myNumber = (int) maxLong;
-//        System.out.println(myNumber);
+        int coolExample = Integer.MAX_VALUE + 1;
+        System.out.println(coolExample);
     }
 }
 
