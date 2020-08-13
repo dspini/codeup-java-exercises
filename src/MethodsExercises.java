@@ -4,7 +4,7 @@ public class MethodsExercises {
     public static void main(String[] args) {
 
         // Test 1
-            System.out.println(add(5, 5));
+            System.out.println(add(7, 5));
             System.out.println(subtract(3, 3));
             System.out.println(multiply(4, 4));
             System.out.println(divide(3, 9));
