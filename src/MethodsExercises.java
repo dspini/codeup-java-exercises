@@ -46,15 +46,15 @@ public class MethodsExercises {
     public static int getInteger(int min, int max) {
         Scanner sc = new Scanner(System.in);
         if (!sc.hasNextInt()) {
-            System.out.println("NaN!");
-            return getInteger(min, max);
+        System.out.println("NaN!");
+        return getInteger(min, max);
         }
         int userInput = sc.nextInt();
         if (userInput >= min && userInput <= max) {
-            return userInput;
+        return userInput;
         } else {
-            System.out.println("Num not between 1 and 10!");
-            return getInteger(min, max);
+        System.out.println("Num not between 1 and 10!");
+        return getInteger(min, max);
         }
     }
 
@@ -63,7 +63,7 @@ public class MethodsExercises {
     public static long calculateFactorial(int num) {
         int output = 1;
         for (int i = 1; i <= num; i += 1) {
-            output *= i;
+        output *= i;
         }
         return output;
     }
@@ -71,15 +71,15 @@ public class MethodsExercises {
         boolean willContinue;
         String userChoice;
         do {
-            System.out.println("Please enter an integer from 1 to 12");
-            int userInt = getInteger(1, 12);
-            System.out.println(calculateFactorial(userInt));
-            do {
-                System.out.println("Do you wish to continue? [y/n]: ");
-                userChoice = sc.next().trim();
-            } while (!userChoice.equalsIgnoreCase("y") & !userChoice.equalsIgnoreCase("n"));
+        System.out.println("Please enter an number from 1 to 10");
+        int userInt = getInteger(1, 10);
+        System.out.println(calculateFactorial(userInt));
+        do {
+        System.out.println("Do you wish to continue? [y/n]: ");
+        userChoice = sc.next().trim();
+        } while (!userChoice.equalsIgnoreCase("y") & !userChoice.equalsIgnoreCase("n"));
 
-            willContinue = userChoice.equalsIgnoreCase("y");
+        willContinue = userChoice.equalsIgnoreCase("y");
         } while (willContinue);
     }
 
@@ -92,14 +92,14 @@ public class MethodsExercises {
     }
     public static void rollDiceGame(Scanner sc) {
         String userChoice;
-        System.out.print("Eenter the number of sides for the dice: ");
-        int nSides = getInteger(1, 20);
+        System.out.print("Enter the number of sides for the dice: ");
+        int numSides = getInteger(1, 20);
         do {
-            System.out.println("You have rolled a " + randomWithRange(1, nSides) + " and a " + randomWithRange(1, nSides));
-            do {
-                System.out.println("Would you like to roll again? [y/n]");
-                userChoice = sc.next().trim();
-            } while (!userChoice.equalsIgnoreCase("y") & !userChoice.equalsIgnoreCase("n"));
+        System.out.println("You have rolled a " + randomWithRange(1, numSides) + " and a " + randomWithRange(1, numSides));
+        do {
+        System.out.println("Would you like to roll again? [y/n]");
+        userChoice = sc.next().trim();
+        } while (!userChoice.equalsIgnoreCase("y") & !userChoice.equalsIgnoreCase("n"));
 
         } while (!userChoice.equals("n"));
     }
