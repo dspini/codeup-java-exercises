@@ -53,9 +53,6 @@ public class Person {
         System.out.println(person1.getName().equals(person2.getName()));
         System.out.println(person1 == person2);
 
-        person1 = new Person("Dean");
-        person2 = person1;
-        System.out.println(true);
 
         person1 = new Person("Dean");
         person2 = person1;
