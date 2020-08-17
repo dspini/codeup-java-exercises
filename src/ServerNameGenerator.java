@@ -1,11 +1,11 @@
 public class ServerNameGenerator {
 
-    static String[] adjectives = {"fast", "slow", "broken", "new", "old"};
-    static String[] nouns = {"car", "plane", "boat", "bike", "train"};
+    static String[] adjectives = {"fast","slow","broken","new","old"};
+    static String[] nouns = {"car","plane","boat","bike","train"};
 
 
     static String randomString(String[] words) {
-        int randomElement = (int) (Math.random() * words.length);
+        int randomElement = (int)(Math.random() * words.length);
         return words[randomElement];
     }
 
@@ -13,7 +13,7 @@ public class ServerNameGenerator {
         String adjective = randomString(adjectives);
         String noun = randomString(nouns);
         String serverName = adjective + "-" + noun;
-        System.out.printf("Your server name is:%n%s", serverName);
+        System.out.printf("Your server name is:%n%s",serverName);
     }
 
 }
