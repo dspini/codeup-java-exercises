@@ -4,7 +4,7 @@ public class ArraysExercises {
 
     public static Person[] addPerson(Person[] stooges, Person newStooge) {
         Person[] newStooges = Arrays.copyOf(stooges, stooges.length + 1);
-        newStooges[newStooges.length-1] = newStooge;
+        newStooges[newStooges.length - 1] = newStooge;
         return newStooges;
     }
 

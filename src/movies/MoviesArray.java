@@ -20,7 +20,7 @@ public class MoviesArray {
                 new Movie("Star Wars", "scifi"),
                 new Movie("All About Eve", "drama"),
                 new Movie("The African Queen", "drama"),
-                new Movie("Psycho" , "horror"),
+                new Movie("Psycho", "horror"),
                 new Movie("Chinatown", "drama"),
                 new Movie("One Flew Over The Cuckoo's Nest", "drama"),
                 new Movie("The Grapes Of Wrath", "drama"),
