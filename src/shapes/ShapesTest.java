@@ -3,12 +3,14 @@ package shapes;
 public class ShapesTest {
 
     public static void main(String[] args) {
-        Rectangle noSquare = new Rectangle(5, 4);
-            System.out.println("The Perimeter of the Rectangle is: " + noSquare.getPerimeter() + " inches");
-            System.out.println("The Area of the Rectangle is: " + noSquare.getArea() + " square inches");
 
-        Rectangle plusSquare = new Square(5);
-            System.out.println("The Perimeter of the Rectangle plus the Square is: " +  plusSquare.getPerimeter()+ " inches" );
-            System.out.println("The Area of the Rectangle plus the Square is: " + plusSquare.getArea() + " square inches");
+
+        Measurable myShape = new Square(2);
+        System.out.println("myShape.getPerimeter is " + myShape.getPerimeter() + " inches");
+        System.out.println("myShape.getArea is " + myShape.getArea() + " square inches");
+
+        myShape = new Rectangle(2, 4);
+        System.out.println("myShape.getPerimeter is " + myShape.getPerimeter() + " inches");
+        System.out.println("myShape.getArea is " + myShape.getArea() + " square inches");
     }
 }
