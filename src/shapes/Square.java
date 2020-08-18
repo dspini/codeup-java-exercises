@@ -1,7 +1,8 @@
 package shapes;
-
+//Change your existing Square class to extend Quadrilateral.
 public class Square extends Quadrilateral {
-    public Square(double side) {
+    //methods for setting the length and the width should set both protected properties.
+    protected Square(double side) {
         super(side, side);
     }
 
@@ -13,5 +14,13 @@ public class Square extends Quadrilateral {
     @Override
     public double getArea() {
         return Math.pow(super.width, 2);
+    }
+
+    @Override
+    public void setLength(double length) {
+    }
+
+    @Override
+    public void setWidth(double width) {
     }
 }
