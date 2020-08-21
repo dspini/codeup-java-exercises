@@ -12,34 +12,34 @@ public class GradesApplication { //Create a class named GradesApplication with a
 
         HashMap<String, Student> students = new HashMap<>(); //Inside the main method, create a HashMap named students.
         //It should have keys that are strings that represent github usernames, and values that are Student objects.
-        Student Mathew = new Student("Mathew");
-        Student Mark = new Student("Mark");
-        Student Luke = new Student("Luke");
-        Student John = new Student("John");
+        Student Mathew = new Student("| Mathew |");
+        Student Mark = new Student("| Mark |");
+        Student Luke = new Student("| Luke |");
+        Student John = new Student("| John |");
 
         Mathew.addGrade(100);
         Mathew.addGrade(90);
         Mathew.addGrade(80);
         Mathew.addGrade(70);
-        Mathew.recordAttendance(P);
+
 
         Mark.addGrade(95);
         Mark.addGrade(85);
         Mark.addGrade(75);
         Mark.addGrade(65);
-        Mark.recordAttendance(P);
+
 
         Luke.addGrade(80);
         Luke.addGrade(70);
         Luke.addGrade(60);
         Luke.addGrade(65);
-        Luke.recordAttendance(P);
+
 
         John.addGrade(85);
         John.addGrade(75);
         John.addGrade(65);
         John.addGrade(55);
-        John.recordAttendance(A);
+
 
         //Create at least 4 student objects with at least 3 grades each, and add them to the map.
         students.put("Mathew1234", Mathew);
@@ -48,6 +48,8 @@ public class GradesApplication { //Create a class named GradesApplication with a
         students.put("John1234", John);
 
         do {
+            System.out.println(" Welcome!");
+            System.out.println("~~~~~~~~~~");
             //Create the command line interface
             System.out.println("1. View all students information: ");
             System.out.println("2. View all students names: ");
@@ -59,6 +61,7 @@ public class GradesApplication { //Create a class named GradesApplication with a
 
             switch (option) {
                 case 1:
+                    System.out.println("Here are the GitHub usernames of our students:\n");
                     printAll(students, "information");
                     break;
                 case 2:
@@ -71,13 +74,12 @@ public class GradesApplication { //Create a class named GradesApplication with a
                 case 4:
                     System.out.println("Attendance");
                 case 5:
+                    System.out.println("Goodbye, and have a wonderful day!");
                     System.exit(0);
                     break;
             }
-
             System.out.println("Would you like to continue? y or n");
         } while (input.yesNo());
-
     }
 
     public static void printAll(HashMap<String, Student> students, String option) {
@@ -101,6 +103,8 @@ public class GradesApplication { //Create a class named GradesApplication with a
 
     System.out.println("Student Name: " + one.getName() + " - Github Username: " + username + "\n"
                         + "Current Average: " + one.getGradeAverage() + "\n");
+
     }
+
 }
 
