@@ -61,7 +61,8 @@ public class MoviesApplication {
                     System.err.println("Wrong not a choice.");
             }
             System.out.println("Continue using the movie app?");
-            keepGoing = input.yesNo();
+            String prompt = "";
+            keepGoing = input.yesNo(prompt);
         } while (keepGoing);
     }
 }

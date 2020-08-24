@@ -47,6 +47,7 @@ public class GradesApplication { //Create a class named GradesApplication with a
         students.put("Luke1234", Luke);
         students.put("John1234", John);
 
+        String prompt = "";
         do {
             System.out.println(" Welcome!");
             System.out.println("~~~~~~~~~~");
@@ -79,7 +80,7 @@ public class GradesApplication { //Create a class named GradesApplication with a
                     break;
             }
             System.out.println("Would you like to continue? y or n");
-        } while (input.yesNo());
+        } while (input.yesNo(prompt));
     }
 
     public static void printAll(HashMap<String, Student> students, String option) {
