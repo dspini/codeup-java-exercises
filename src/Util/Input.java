@@ -10,7 +10,6 @@ public class Input {
         return scanner.nextLine().trim().toLowerCase();
     }
 
-    // Catch cases when we run getString without params
     public String getString() {
         return getString("Write something: ");
     }
@@ -37,7 +36,7 @@ public class Input {
 
         try {
             number = Integer.parseInt(getString("Give me a number: "));
-        } catch (NumberFormatException nfe) {
+        } catch (NumberFormatException e) {
             System.out.println("Input is not a number");
             return getInt();
         }
@@ -50,7 +49,7 @@ public class Input {
 
         try {
             number = Double.parseDouble(getString("Give me a decimal: "));
-        } catch (NumberFormatException nfe) {
+        } catch (NumberFormatException e) {
             System.out.println("Input is not a decimal");
             return getDouble();
         }
