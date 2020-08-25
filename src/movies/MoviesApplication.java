@@ -62,7 +62,7 @@ public class MoviesApplication {
             }
             System.out.println("Continue using the movie app?");
             String prompt = "";
-            keepGoing = input.yesNo(prompt);
+            keepGoing = input.yesNo();
         } while (keepGoing);
     }
 }

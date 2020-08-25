@@ -80,7 +80,7 @@ public class GradesApplication { //Create a class named GradesApplication with a
                     break;
             }
             System.out.println("Would you like to continue? y or n");
-        } while (input.yesNo(prompt));
+        } while (input.yesNo());
     }
 
     public static void printAll(HashMap<String, Student> students, String option) {

@@ -15,56 +15,54 @@ public class Input {
         return getString("Write something: ");
     }
 
-    public boolean yesNo(String prompt) {
+    public boolean yesNo() {
         String input = getString("Type yes/no: ");
         return input.equals("yes") || input.equals("y");
     }
 
     public int getInt(int min, int max) {
-        String prompt = "";
-        int num = getInt(prompt);
+        int num = getInt();
 
         if (num < min || num > max) {
-            System.out.println("Error outside of the boundaries");
+            System.out.println("Error outs of boundary");
             return getInt(min, max);
         }
 
         return num;
     }
 
-    public int getInt(String prompt) {
+    public int getInt() {
 
         int number;
 
         try {
             number = Integer.parseInt(getString("Give me a number: "));
         } catch (NumberFormatException nfe) {
-            System.out.println("Input is not valid, make sure it's a number");
-            return getInt(prompt);
+            System.out.println("Input is not a number");
+            return getInt();
         }
 
         return number;
     }
 
-    public double getDouble(String prompt) {
+    public double getDouble() {
         double number;
 
         try {
             number = Double.parseDouble(getString("Give me a decimal: "));
         } catch (NumberFormatException nfe) {
-            System.out.println("Input is not valid, make sure it's a decimal");
-            return getDouble(prompt);
+            System.out.println("Input is not a decimal");
+            return getDouble();
         }
 
         return number;
     }
 
     public double getDouble(double min, double max) {
-        String prompt = "";
-        double num = getDouble(prompt);
+        double num = getDouble();
 
         if (num < min || num > max) {
-            System.out.println("Error outside of the boundaries");
+            System.out.println("Error out of boundary");
             return getDouble(min, max);
         }
 
